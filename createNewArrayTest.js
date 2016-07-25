@@ -12,3 +12,17 @@ test.createNewArray_creates_an_array_of_given_size = function(){
 	assert.deepEqual(a.length,5);
 	assert.equal(a[4],undefined);
 };
+
+test.createNewArray_creates_an_array_of_given_size_with_given_value = function(){
+	var a = r.createNewArray(2,25);
+	assert.deepEqual(a.length,2);
+	assert.equal(a[0],25);
+	assert.equal(a[1],25);
+};
+
+test.createNewArray_creates_an_array_of_given_size_with_given_object = function(){
+	var a = r.createNewArray(2,{a:1});
+	assert.deepEqual(a.length,2);
+	assert.deepEqual(a[0],{a:1});
+	assert.deepEqual(a[1],{a:1});
+};
