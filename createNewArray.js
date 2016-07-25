@@ -2,7 +2,7 @@ var r = {};
 exports.r = r;
 
 var pushElement = function(collection, size, element){
-	collection.push(element);
+	collection.push(JSON.parse(JSON.stringify(element)));
 	(collection.length == size) ? null : pushElement(collection, size, element)
 }
 
