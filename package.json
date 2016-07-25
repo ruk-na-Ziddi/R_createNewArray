@@ -1,0 +1,11 @@
+{
+  "name": "createnewarray",
+  "version": "1.0.0",
+  "description": "",
+  "main": "createNewArray.js",
+  "scripts": {
+    "test": "node runTest.js createNewArrayTest.js"
+  },
+  "author": "ankurks@thoughtworks.com",
+  "license": "ISC"
+}
